@@ -10,7 +10,7 @@ namespace T.P_sqlserver
 {
     static class CargarComboBox
     {
-        static SqlConnection conexion = new SqlConnection("Data Source=SQLSERVER;user id=u14;password=u14;Initial Catalog=u14;Integrated Security=false");
+        static SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-QT2ACQ6\\AGUSSSTIN;user id=sa;password=1234;Initial Catalog=TP_FINAL_HOSPITAL;Integrated Security=false");
         static public void CargarCiudades(ComboBox combobox)
         {
             combobox.Items.Clear();
@@ -91,6 +91,38 @@ namespace T.P_sqlserver
                 while (reader.Read())
                 {
                     combobox.Items.Add(reader["nombre_practica"].ToString());
+                }
+                conexion.Close();
+            }
+        }
+        static public void CargarPacientes(ComboBox combobox, ComboBox id)
+        {
+            combobox.Items.Clear();
+            string consulta = "SELECT nombre_paciente, apellido_paciente, dni, id_pacientes FROM Pacientes";
+            conexion.Open();
+            using (SqlCommand comando = new SqlCommand(consulta, conexion))
+            using (SqlDataReader reader = comando.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    combobox.Items.Add(reader["nombre_paciente"].ToString() + " " + reader["apellido_paciente"].ToString() + " " + reader["dni"].ToString());
+                    id.Items.Add(reader["id_pacientes"]);
+                }
+                conexion.Close();
+            }
+        }
+        static public void CargarProfesionales(ComboBox combobox, ComboBox id)
+        {
+            combobox.Items.Clear();
+            string consulta = "SELECT nombre_profesional, apellido_profesional, id_profesionales FROM Profesionales";
+            conexion.Open();
+            using (SqlCommand comando = new SqlCommand(consulta, conexion))
+            using (SqlDataReader reader = comando.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    combobox.Items.Add(reader["nombre_profesional"].ToString() + " " + reader["apellido_profesional"].ToString());
+                    id.Items.Add(reader["id_profesionales"]);
                 }
                 conexion.Close();
             }

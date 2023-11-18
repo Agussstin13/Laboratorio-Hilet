@@ -14,7 +14,8 @@ namespace T.P_sqlserver
 {
     static class Actualizar
     {
-        static SqlConnection conexion = new SqlConnection("Data Source=SQLSERVER;user id=u14;password=u14;Initial Catalog=u14;Integrated Security=false");
+        static SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-QT2ACQ6\\AGUSSSTIN;user id=sa;password=1234;Initial Catalog=TP_FINAL_HOSPITAL;Integrated Security=false");
+
 
         static public void Pacientes(DataGrid dataGrid)
         {
@@ -124,8 +125,8 @@ namespace T.P_sqlserver
         {
             try
             {
-                string query = "SELECT DISTINCT e.nombre_especialidad AS Especialidad, c.nombre_categoria AS Categoria, pe.nombre_personal AS Nombre, pe.apellido_personal AS Apellido, pe.matricula_personal AS Matricula, e.id_especialidades AS ID FROM " +
-                    "Especialidades AS e LEFT JOIN Personal_Laboratorio AS pe ON e.id_especialidades = pe.id_especialidades LEFT JOIN Categoria AS c ON pe.id_categorias = c.id_categorias ORDER BY e.nombre_especialidad;";
+                string query = "SELECT DISTINCT e.nombre_especialidad AS Especialidad, jefes.nombre_categoria AS Categoria, jefes.nombre_personal AS Nombre, jefes.apellido_personal AS Apellido, jefes.matricula_personal AS Matricula, e.id_especialidades AS ID FROM " +
+                    "Especialidades AS e LEFT JOIN (SELECT nombre_personal, apellido_personal, matricula_personal, jefes.nombre_categoria, pe.id_categorias, pe.id_especialidades FROM Personal_Laboratorio AS pe INNER JOIN (SELECT id_categorias, nombre_categoria FROM Categoria WHERE nombre_categoria = 'Jefe') AS jefes ON jefes.id_categorias = pe.id_categorias) AS jefes ON e.id_especialidades = jefes.id_especialidades ORDER BY e.nombre_especialidad;";
                 using (SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conexion))
                 using (DataTable dt = new DataTable())
                 {

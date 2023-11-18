@@ -26,7 +26,7 @@ namespace T.P_sqlserver
     /// </summary>
     public partial class MainWindow : Window
     {
-        SqlConnection conexion = new SqlConnection("Data Source=SQLSERVER;user id=u14;password=u14;Initial Catalog=u14;Integrated Security=false");
+        SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-QT2ACQ6\\AGUSSSTIN;user id=sa;password=1234;Initial Catalog=TP_FINAL_HOSPITAL;Integrated Security=false");
         public MainWindow ()
         {
             InitializeComponent();
@@ -34,13 +34,9 @@ namespace T.P_sqlserver
         }
         private void btnLimpiar_Click(object sender, RoutedEventArgs e)
         {
-            CmBox1.SelectedIndex= -1;
-            CmBox2.SelectedIndex = -1;
-            CmBox3.SelectedIndex = -1;
-            box1.Text = ""; box2.Text = ""; box3.Text = "";
-            box4.Text = ""; box5.Text = "";box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = "";
+            CmBox3.SelectedIndex = -1; box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
+            box7.Text = ""; box8.Text = ""; box9.Text = ""; box10.Text = ""; box11.Text = "";
         }
         bool banderaagregar = false;
         private void btnAgregar_Click(object sender, RoutedEventArgs e)
@@ -88,7 +84,6 @@ namespace T.P_sqlserver
                                         }
                                     }
                                     Actualizar.Pacientes(DataPacientes);
-                                    Actualizar.PracticasIngreso(DataPRXI);
                                     break;
                                 case 1:
                                     query = "INSERT INTO Ingresos(id_pacientes, id_profesionales, fecha_ingreso, fecha_retiro) VALUES ((SELECT id_pacientes FROM Pacientes WHERE nombre_paciente = @nombre_paciente AND apellido_paciente = @apellido_paciente AND dni = @dni), (SELECT id_profesionales FROM Profesionales WHERE nombre_profesional = @nombre_profesional AND apellido_profesional = @apellido_profesional), @fecha_ingreso, @fecha_retiro)";
@@ -176,6 +171,7 @@ namespace T.P_sqlserver
                                                     }
                                                 }
                                                 Actualizar.PersonalLaboratorio(DataPEXL);
+                                                Actualizar.Especialidades(DataEspecialidades);
                                             }
                                             catch (Exception ex)
                                             {
@@ -311,6 +307,7 @@ namespace T.P_sqlserver
                                         }
                                     }
                                     Actualizar.Pacientes(DataPacientes);
+                                    Actualizar.PracticasIngreso(DataPRXI);
                                     DataPacientes.SelectedIndex = 0;
                                     break;
                                 case 1:
@@ -654,10 +651,7 @@ namespace T.P_sqlserver
         }
         private void DataPacientes_Loaded(object sender, RoutedEventArgs e)
         {
-            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-            box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            btnLimpiar_Click(sender, e);
             if (DataPacientes.Columns.Count > 0)
             {
                 Label1.Content = DataPacientes.Columns[0].Header.ToString(); Label1.Visibility = Visibility.Visible; box1.Visibility = Visibility.Visible; CmBox1.Visibility = Visibility.Hidden;
@@ -677,19 +671,18 @@ namespace T.P_sqlserver
         }
         private void DataIngresos_Loaded(object sender, RoutedEventArgs e)
         {
-            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-            box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            btnLimpiar_Click(sender, e);
             if (DataIngresos.Columns.Count > 0)
             {
-                Label1.Content = DataIngresos.Columns[0].Header.ToString(); Label1.Visibility = Visibility.Visible; box1.Visibility = Visibility.Visible; CmBox1.Visibility = Visibility.Hidden;
-                Label2.Content = DataIngresos.Columns[1].Header.ToString(); Label2.Visibility = Visibility.Visible; box2.Visibility = Visibility.Visible; CmBox2.Visibility = Visibility.Hidden;
-                Label3.Content = DataIngresos.Columns[2].Header.ToString(); Label3.Visibility = Visibility.Visible; box3.Visibility = Visibility.Visible; CmBox3.Visibility = Visibility.Hidden;
-                Label4.Content = DataIngresos.Columns[3].Header.ToString(); Label4.Visibility = Visibility.Visible; box4.Visibility = Visibility.Visible; CmBox4.Visibility = Visibility.Hidden;
-                Label5.Content = DataIngresos.Columns[4].Header.ToString(); Label5.Visibility = Visibility.Visible; box5.Visibility = Visibility.Visible;
-                Label6.Content = DataIngresos.Columns[5].Header.ToString(); Label6.Visibility = Visibility.Visible; box6.Visibility = Visibility.Visible;
-                Label7.Content = DataIngresos.Columns[6].Header.ToString(); Label7.Visibility = Visibility.Visible; box7.Visibility = Visibility.Visible;
+                Label1.Content = "Pacientes"; Label1.Visibility = Visibility.Visible; box1.Visibility = Visibility.Hidden; CmBox1.Visibility = Visibility.Visible;
+                CargarComboBox.CargarPacientes(CmBox1, CmBox3);
+                Label2.Content = "Profesionales"; Label2.Visibility = Visibility.Visible; box2.Visibility = Visibility.Hidden; CmBox2.Visibility = Visibility.Visible;
+                CargarComboBox.CargarProfesionales(CmBox2, CmBox4);
+                Label3.Content = DataIngresos.Columns[5].Header.ToString(); Label3.Visibility = Visibility.Visible; box3.Visibility = Visibility.Visible; CmBox3.Visibility = Visibility.Hidden;
+                Label4.Content = DataIngresos.Columns[6].Header.ToString(); Label4.Visibility = Visibility.Visible; box4.Visibility = Visibility.Visible; CmBox4.Visibility = Visibility.Hidden;
+                Label5.Visibility = Visibility.Hidden; box5.Visibility = Visibility.Hidden;
+                Label6.Visibility = Visibility.Hidden; box6.Visibility = Visibility.Hidden;
+                Label7.Visibility = Visibility.Hidden; box7.Visibility = Visibility.Hidden;
                 Label8.Visibility = Visibility.Hidden; box8.Visibility = Visibility.Hidden;
                 Label9.Visibility = Visibility.Hidden; box9.Visibility = Visibility.Hidden;
                 Label10.Visibility = Visibility.Hidden; box10.Visibility = Visibility.Hidden;
@@ -699,10 +692,7 @@ namespace T.P_sqlserver
         }
         private void DataLocalidades_Loaded(object sender, RoutedEventArgs e)
         {
-            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-            box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            btnLimpiar_Click(sender, e);
             if (DataLocalidades.Columns.Count > 0)
             {
                 Label1.Content = DataLocalidades.Columns[0].Header.ToString(); Label1.Visibility = Visibility.Visible; box1.Visibility = Visibility.Visible; CmBox1.Visibility = Visibility.Hidden;
@@ -721,10 +711,7 @@ namespace T.P_sqlserver
         }
         private void DataMedicos_Loaded(object sender, RoutedEventArgs e)
         {
-            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-            box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            btnLimpiar_Click(sender, e);
             if (DataMedicos.Columns.Count > 0)
             {
                 Label1.Content = DataMedicos.Columns[0].Header.ToString(); Label1.Visibility = Visibility.Visible; box1.Visibility = Visibility.Visible; CmBox1.Visibility = Visibility.Hidden;
@@ -744,10 +731,7 @@ namespace T.P_sqlserver
         }
         private void DataPEXL_Loaded(object sender, RoutedEventArgs e)
         {
-            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-            box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            btnLimpiar_Click(sender, e);
             if (DataPEXL.Columns.Count > 0)
             {
                 Label1.Content = DataPEXL.Columns[0].Header.ToString(); Label1.Visibility = Visibility.Visible; box1.Visibility = Visibility.Visible; CmBox1.Visibility = Visibility.Hidden;
@@ -768,10 +752,7 @@ namespace T.P_sqlserver
         }
         private void DataCategorias_Loaded(object sender, RoutedEventArgs e)
         {
-            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-            box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            btnLimpiar_Click(sender, e);
             if (DataCategorias.Columns.Count > 0)
             {
                 Label1.Content = DataCategorias.Columns[0].Header.ToString(); Label1.Visibility = Visibility.Visible; box1.Visibility = Visibility.Visible; CmBox1.Visibility = Visibility.Hidden;
@@ -790,10 +771,7 @@ namespace T.P_sqlserver
         }
         private void DataEspecialidades_Loaded(object sender, RoutedEventArgs e)
         {
-            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-            box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            btnLimpiar_Click(sender, e);
             if (DataEspecialidades.Columns.Count > 0)
             {
                 Label1.Content = DataEspecialidades.Columns[0].Header.ToString(); Label1.Visibility = Visibility.Visible; box1.Visibility = Visibility.Visible; CmBox1.Visibility = Visibility.Hidden;
@@ -812,10 +790,7 @@ namespace T.P_sqlserver
         }
         private void DataPracticas_Loaded(object sender, RoutedEventArgs e) {
             try {
-                box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-                box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-                box7.Text = ""; box8.Text = ""; box9.Text = "";
-                box10.Text = ""; box11.Text = "";
+                btnLimpiar_Click(sender, e);
                 if (DataPracticas.Columns.Count > 0) {
                     Label1.Content = DataPracticas.Columns [0].Header.ToString(); Label1.Visibility = Visibility.Visible; box1.Visibility = Visibility.Visible; CmBox1.Visibility = Visibility.Hidden;
                     Label2.Content = DataPracticas.Columns [1].Header.ToString(); Label2.Visibility = Visibility.Visible; box2.Visibility = Visibility.Hidden; CmBox2.Visibility = Visibility.Visible;
@@ -838,11 +813,8 @@ namespace T.P_sqlserver
         private void DataPRXI_Loaded(object sender, RoutedEventArgs e)
         {
             try {
-                box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-                box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-                box7.Text = ""; box8.Text = ""; box9.Text = "";
-                box10.Text = ""; box11.Text = "";
-            if (DataPRXI.Columns.Count > 0)
+                btnLimpiar_Click(sender, e);
+                if (DataPRXI.Columns.Count > 0)
             {
                 Label1.Content = DataPRXI.Columns[0].Header.ToString(); Label1.Visibility = Visibility.Visible; box1.Visibility = Visibility.Visible; CmBox1.Visibility = Visibility.Hidden;
                 Label2.Content = DataPRXI.Columns[1].Header.ToString(); Label2.Visibility = Visibility.Hidden; box2.Visibility = Visibility.Hidden; CmBox2.Visibility = Visibility.Hidden;
@@ -910,16 +882,13 @@ namespace T.P_sqlserver
         private void DataPacientes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try {
-                box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-                box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-                box7.Text = ""; box8.Text = ""; box9.Text = "";
-                box10.Text = ""; box11.Text = "";
+                btnLimpiar_Click(sender, e);
                 if (DataPacientes.SelectedItem != null) {
 
                     DataRowView selectedRow = (DataRowView)DataPacientes.SelectedItem;
                     box1.Text = selectedRow.Row [0].ToString();
                     box2.Text = selectedRow.Row [1].ToString();
-                    CmBox3.SelectedItem = selectedRow.Row [2].ToString();
+                    CmBox3.SelectedItem = selectedRow.Row[2].ToString();
                     box4.Text = selectedRow.Row [3].ToString();
                     box5.Text = selectedRow.Row [4].ToString();
                     box6.Text = selectedRow.Row [5].ToString();
@@ -936,45 +905,33 @@ namespace T.P_sqlserver
         private void DataIngresos_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try {
-                box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-                box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-                box7.Text = ""; box8.Text = ""; box9.Text = "";
-                box10.Text = ""; box11.Text = "";
+                btnLimpiar_Click(sender, e);
                 if (DataIngresos.SelectedItem != null)
                 {
-                
-                        DataRowView selectedRow = (DataRowView)DataIngresos.SelectedItem;
-                        box1.Text = selectedRow.Row[0].ToString();
-                        box2.Text = selectedRow.Row[1].ToString();
-                        box3.Text = selectedRow.Row[2].ToString();
-                        box4.Text = selectedRow.Row[3].ToString();
-                        box5.Text = selectedRow.Row[4].ToString();
-                        box6.Text = selectedRow.Row[5].ToString();
-                        box7.Text = selectedRow.Row[6].ToString();
+                    DataRowView selectedRow = (DataRowView)DataIngresos.SelectedItem;
+                    CmBox1.SelectedItem = selectedRow.Row[0].ToString() + " " + selectedRow.Row[1].ToString() + " " + selectedRow.Row[2].ToString();
+                    CmBox2.SelectedItem = selectedRow.Row[3].ToString() + " " + selectedRow.Row[4].ToString();
+                    box3.Text = selectedRow.Row[5].ToString();
+                    box4.Text = selectedRow.Row[6].ToString();
+
                 }
             }catch { }
         }
         private void DataLocalidades_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try {
-                box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-                box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-                box7.Text = ""; box8.Text = ""; box9.Text = "";
-                box10.Text = ""; box11.Text = "";
+                btnLimpiar_Click(sender, e);
                 if (DataLocalidades.SelectedItem != null) {
                     DataRowView selectedRow = (DataRowView)DataLocalidades.SelectedItem;
-                    box1.Text = selectedRow.Row [0].ToString();
-                    box2.Text = selectedRow.Row [1].ToString();
+                    box1.Text = selectedRow.Row[0].ToString();
+                    box2.Text = selectedRow.Row[1].ToString();
                 }
             }catch { }
         }
         private void DataMedicos_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try {
-                box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-                box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-                box7.Text = ""; box8.Text = ""; box9.Text = "";
-                box10.Text = ""; box11.Text = "";
+                btnLimpiar_Click(sender, e);
                 if (DataMedicos.SelectedItem != null)
                 {
                     DataRowView selectedRow = (DataRowView)DataMedicos.SelectedItem;
@@ -988,10 +945,7 @@ namespace T.P_sqlserver
         }
         private void DataPEXL_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-            box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            btnLimpiar_Click(sender, e);
             if (DataPEXL.SelectedItem != null)
             {
                 try
@@ -1003,18 +957,12 @@ namespace T.P_sqlserver
                     CmBox4.Text = selectedRow.Row[3].ToString();
                     box5.Text = selectedRow.Row [4].ToString();
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                catch { }
             }
         }
         private void DataCategorias_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-            box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            btnLimpiar_Click(sender, e);
             if (DataCategorias.SelectedItem != null)
             {
                 try
@@ -1022,18 +970,12 @@ namespace T.P_sqlserver
                     DataRowView selectedRow = (DataRowView)DataCategorias.SelectedItem;
                     box1.Text = selectedRow.Row[0].ToString();
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                catch { }
             }
         }
         private void DataEspecialidades_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-            box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            btnLimpiar_Click(sender, e);
             if (DataEspecialidades.SelectedItem != null)
             {
                 try
@@ -1045,18 +987,12 @@ namespace T.P_sqlserver
                     box4.Text = selectedRow.Row[0].ToString();
                     box5.Text = selectedRow.Row[0].ToString();
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                catch { }
             }
         }
         private void DataPracticas_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-            box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            btnLimpiar_Click(sender, e);
             if (DataPracticas.SelectedItem != null)
             {
                 try
@@ -1068,10 +1004,7 @@ namespace T.P_sqlserver
                     box4.Text = selectedRow.Row[3].ToString();
                     box5.Text = selectedRow.Row[4].ToString();
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                catch { }
             }
         }
         /*private void DataPEXE_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -1114,10 +1047,7 @@ namespace T.P_sqlserver
         }*/
         private void DataPRXI_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            box1.Text = ""; CmBox1.SelectedIndex = -1; box2.Text = ""; CmBox2.SelectedIndex = -1; box3.Text = ""; CmBox3.SelectedIndex = -1;
-            box4.Text = ""; CmBox4.SelectedIndex = -1; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
+            btnLimpiar_Click(sender, e);
             if (DataPRXI.SelectedItem != null)
             {
                 try
@@ -1125,43 +1055,64 @@ namespace T.P_sqlserver
                     DataRowView selectedRow = (DataRowView)DataPRXI.SelectedItem;
                     box1.Text = selectedRow.Row[0].ToString();
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                catch { }
             }
         }
         private void TabControl1_SelectionChanged(object sender, SelectionChangedEventArgs? e)
         {
-            
-        }
-        private void TabControl2_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-           /* switch (TabControl2.SelectedIndex)
+            switch (TabControl2.SelectedIndex)
             {
                 case 0:
-                    DataLocalidades.Loaded += DataLocalidades_Loaded;
+                    DataLocalidades_Loaded(sender, e);
                     break;
                 case 1:
-                    DataMedicos.Loaded += DataMedicos_Loaded;
+                    DataMedicos_Loaded(sender, e);
                     break;
                 case 2:
-                    DataPEXL.Loaded += DataPEXL_Loaded;
+                    DataPEXL_Loaded(sender, e);
                     break;
                 case 3:
-                    DataCategorias.Loaded += DataCategorias_Loaded;
+                    DataCategorias_Loaded(sender, e);
                     break;
                 case 4:
-                    DataEspecialidades.Loaded += DataEspecialidades_Loaded;
+                    DataEspecialidades_Loaded(sender, e);
                     break;
                 case 5:
-                    DataPracticas.Loaded += DataPracticas_Loaded;
+                    DataPracticas_Loaded(sender, e);
                     break;
                 case 6:
-                    DataPEXE.Loaded += DataPEXE_Loaded;
+                    DataPRXI_Loaded(sender, e);
                     break;
-                case 7:
-                    DataPRXE.Loaded += DataPRXE_Loaded;
+                default:
+                    break;
+            }
+        }
+        private void TabControl2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {/*
+            switch (TabControl2.SelectedIndex)
+            {
+                case 0:
+                    DataLocalidades_Loaded(sender, e);
+                    break;
+                case 1:
+                    DataMedicos_Loaded(sender, e);
+                    break;
+                case 2:
+                    DataPEXL_Loaded(sender, e);
+                    break;
+                case 3:
+                    DataCategorias_Loaded(sender, e);
+                    break;
+                case 4:
+                    DataEspecialidades_Loaded(sender, e);
+                    break;
+                case 5:
+                    DataPracticas_Loaded(sender, e);
+                    break;
+                case 6:
+                    DataPRXI_Loaded(sender, e);
+                    break;
+                default:
                     break;
             }*/
         }
@@ -1241,7 +1192,7 @@ namespace T.P_sqlserver
         }
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            CmBox3.SelectedIndex = CmBox1.SelectedIndex;
         }
         private void ComboBox2_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -1256,6 +1207,36 @@ namespace T.P_sqlserver
         private void ComboBox4_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void TabControl2_Loaded(object sender, RoutedEventArgs e)
+        {
+            switch (TabControl2.SelectedIndex)
+            {
+                case 0:
+                    DataLocalidades_Loaded(sender, e);
+                    break;
+                case 1:
+                    DataMedicos_Loaded(sender, e);
+                    break;
+                case 2:
+                    DataPEXL_Loaded(sender, e);
+                    break;
+                case 3:
+                    DataCategorias_Loaded(sender, e);
+                    break;
+                case 4:
+                    DataEspecialidades_Loaded(sender, e);
+                    break;
+                case 5:
+                    DataPracticas_Loaded(sender, e);
+                    break;
+                case 6:
+                    DataPRXI_Loaded(sender, e);
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

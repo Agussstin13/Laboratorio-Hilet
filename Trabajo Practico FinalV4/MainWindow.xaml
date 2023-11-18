@@ -19,25 +19,25 @@
         <TabControl x:Name="TabControl1" SelectionChanged="TabControl1_SelectionChanged" Margin="10,10,10,261">
             <TabItem x:Name="Pacientes" Header="Pacientes">
                 <Grid>
-                    <DataGrid Background="#98c3ed" x:Name="DataPacientes" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataPacientes_Loaded" SelectionChanged="DataPacientes_SelectionChanged" AutoGeneratingColumn="DataPacientes_Auto"/>
+                    <DataGrid x:Name="DataPacientes" Background="#98c3ed" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataPacientes_Loaded" SelectionChanged="DataPacientes_SelectionChanged" AutoGeneratingColumn="DataPacientes_Auto"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="Ingresos" Header="Ingresos">
                 <Grid>
-                    <DataGrid Background="#98c3ed" x:Name="DataIngresos" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataIngresos_Loaded" SelectionChanged="DataIngresos_SelectionChanged" AutoGeneratingColumn="DataIngresos_Auto"/>
+                    <DataGrid x:Name="DataIngresos" Background="#98c3ed" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataIngresos_Loaded" SelectionChanged="DataIngresos_SelectionChanged" AutoGeneratingColumn="DataIngresos_Auto"/>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="Laboratorio" Header="Laboratorio">
+            <TabItem x:Name="Laboratorio" Header="Laboratorio" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
                 <Grid Background="#FFE5E5E5">
-                    <TabControl x:Name="TabControl2" SelectionChanged="TabControl2_SelectionChanged">
+                    <TabControl x:Name="TabControl2" SelectionChanged="TabControl2_SelectionChanged" Loaded="TabControl2_Loaded">
                         <TabItem x:Name="Localidades" Header="Localidades">
                             <Grid Background="#FFE5E5E5">
-                                <DataGrid Background="#98c3ed" x:Name="DataLocalidades" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataLocalidades_Loaded" SelectionChanged="DataLocalidades_SelectionChanged" AutoGeneratingColumn="DataLocalidades_Auto"/>
+                                <DataGrid x:Name="DataLocalidades" Background="#98c3ed" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataLocalidades_Loaded" SelectionChanged="DataLocalidades_SelectionChanged" AutoGeneratingColumn="DataLocalidades_Auto"/>
                             </Grid>
                         </TabItem>
                         <TabItem x:Name="PersonalMedico" Header="Personal Medico">
                             <Grid Background="#FFE5E5E5">
-                                <DataGrid x:Name="DataMedicos" Background="#98c3ed" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataMedicos_Loaded" SelectionChanged="DataMedicos_SelectionChanged" AutoGeneratingColumn="DataMedicos_Auto"/>
+                                <DataGrid x:Name="DataMedicos" Background="#98c3ed" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataMedicos_Loaded" SelectionChanged="DataMedicos_SelectionChanged" AutoGeneratingColumn="DataMedicos_Auto"/>
                             </Grid>
                         </TabItem>
                         <TabItem x:Name="PersonalLaboratorio" Header="Personal Laboratorio">
@@ -46,27 +46,27 @@
                                     <ColumnDefinition Width="147*"/>
                                     <ColumnDefinition Width="836*"/>
                                 </Grid.ColumnDefinitions>
-                                <DataGrid x:Name="DataPEXL" Background="#98c3ed" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataPEXL_Loaded" SelectionChanged="DataPEXL_SelectionChanged" AutoGeneratingColumn="DataPEXL_Auto" Grid.ColumnSpan="2"/>
+                                <DataGrid x:Name="DataPEXL" Background="#98c3ed" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataPEXL_Loaded" SelectionChanged="DataPEXL_SelectionChanged" AutoGeneratingColumn="DataPEXL_Auto" Grid.ColumnSpan="2"/>
                             </Grid>
                         </TabItem>
                         <TabItem Header="Categorías">
                             <Grid Background="#FFE5E5E5">
-                                <DataGrid x:Name="DataCategorias" Background="#98c3ed" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataCategorias_Loaded" SelectionChanged="DataCategorias_SelectionChanged" AutoGeneratingColumn="DataCategorias_Auto"/>
+                                <DataGrid x:Name="DataCategorias" Background="#98c3ed" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataCategorias_Loaded" SelectionChanged="DataCategorias_SelectionChanged" AutoGeneratingColumn="DataCategorias_Auto"/>
                             </Grid>
                         </TabItem>
                         <TabItem Header="Especialidades">
                             <Grid Background="#FFE5E5E5">
-                                <DataGrid x:Name="DataEspecialidades" Background="#98c3ed" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataEspecialidades_Loaded" SelectionChanged="DataEspecialidades_SelectionChanged" AutoGeneratingColumn="DataEspecialidades_Auto"/>
+                                <DataGrid x:Name="DataEspecialidades" Background="#98c3ed" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataEspecialidades_Loaded" SelectionChanged="DataEspecialidades_SelectionChanged" AutoGeneratingColumn="DataEspecialidades_Auto"/>
                             </Grid>
                         </TabItem>
                         <TabItem x:Name="Practicas" Header="Practicas">
                             <Grid Background="#FFE5E5E5">
-                                <DataGrid x:Name="DataPracticas" Background="#98c3ed" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataPracticas_Loaded" SelectionChanged="DataPracticas_SelectionChanged" AutoGeneratingColumn="DataPracticas_Auto"/>
+                                <DataGrid x:Name="DataPracticas" Background="#98c3ed" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataPracticas_Loaded" SelectionChanged="DataPracticas_SelectionChanged" AutoGeneratingColumn="DataPracticas_Auto"/>
                             </Grid>
                         </TabItem>
                         <TabItem x:Name="Practicas_por_Ingreso" Header="Practicas por Ingreso">
                             <Grid Background="#FFE5E5E5">
-                                <DataGrid x:Name="DataPRXI" Background="#98c3ed" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataPRXI_Loaded" SelectionChanged="DataPRXI_SelectionChanged" AutoGeneratingColumn="DataPRXI_Auto"/>
+                                <DataGrid x:Name="DataPRXI" Background="#98c3ed" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataPRXI_Loaded" SelectionChanged="DataPRXI_SelectionChanged" AutoGeneratingColumn="DataPRXI_Auto"/>
                             </Grid>
                         </TabItem>
                         <!-- <TabItem Header="Personal por Especialidad">
