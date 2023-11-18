@@ -831,54 +831,6 @@ namespace T.P_sqlserver
             }
             } catch { }
         }
-
-        /*private void DataPEXE_Loaded(object sender, RoutedEventArgs e)
-        {
-            if (DataPEXE.Columns.Count > 0)
-            {
-                Label1.Visibility = Visibility.Hidden; box1.Visibility = Visibility.Hidden; CmBox1.Visibility = Visibility.Hidden;
-                Label2.Visibility = Visibility.Hidden; box2.Visibility = Visibility.Hidden; CmBox2.Visibility = Visibility.Hidden;
-                Label3.Visibility = Visibility.Hidden; box3.Visibility = Visibility.Hidden; CmBox3.Visibility = Visibility.Hidden;
-                Label4.Visibility = Visibility.Hidden; box4.Visibility = Visibility.Hidden; CmBox4.Visibility = Visibility.Hidden;
-                Label5.Visibility = Visibility.Hidden; box5.Visibility = Visibility.Hidden;
-                Label6.Visibility = Visibility.Hidden; box6.Visibility = Visibility.Hidden;
-                Label7.Visibility = Visibility.Hidden; box7.Visibility = Visibility.Hidden;
-                Label8.Visibility = Visibility.Hidden; box8.Visibility = Visibility.Hidden;
-                Label9.Visibility = Visibility.Hidden; box9.Visibility = Visibility.Hidden;
-                Label10.Visibility = Visibility.Hidden; box10.Visibility = Visibility.Hidden;
-                Label11.Visibility = Visibility.Hidden; box11.Visibility = Visibility.Hidden;
-                 Label1.Content = DataPEXE.Columns[0].Header.ToString(); Label1.Visibility = Visibility.Visible; box1.Visibility = Visibility.Visible; CmBox1.Visibility = Visibility.Hidden;
-                 Label2.Content = DataPEXE.Columns[1].Header.ToString(); Label2.Visibility = Visibility.Visible; box2.Visibility = Visibility.Visible; CmBox2.Visibility = Visibility.Hidden;
-                 Label3.Content = DataPEXE.Columns[2].Header.ToString(); Label3.Visibility = Visibility.Visible; box3.Visibility = Visibility.Visible; CmBox3.Visibility = Visibility.Visible;
-                 Label4.Content = DataPEXE.Columns[3].Header.ToString(); Label4.Visibility = Visibility.Visible; box4.Visibility = Visibility.Visible;
-                 Label5.Visibility = Visibility.Hidden; box5.Visibility = Visibility.Hidden;
-                 Label6.Visibility = Visibility.Hidden; box6.Visibility = Visibility.Hidden;
-                 Label7.Visibility = Visibility.Hidden; box7.Visibility = Visibility.Hidden;
-                 Label8.Visibility = Visibility.Hidden; box8.Visibility = Visibility.Hidden;
-                 Label9.Visibility = Visibility.Hidden; box9.Visibility = Visibility.Hidden;
-                 Label10.Visibility = Visibility.Hidden; box10.Visibility = Visibility.Hidden;
-                 Label11.Visibility = Visibility.Hidden; box11.Visibility = Visibility.Hidden;
-            }
-        }
-        private void DataPRXE_Loaded(object sender, RoutedEventArgs e)
-        {
-            if (DataPRXE.Columns.Count > 0)
-            {
-                Label1.Content = DataPRXE.Columns[0].Header.ToString(); Label1.Visibility = Visibility.Hidden; box1.Visibility = Visibility.Hidden; CmBox1.Visibility = Visibility.Hidden;
-                Label2.Content = DataPRXE.Columns[1].Header.ToString(); Label2.Visibility = Visibility.Hidden; box2.Visibility = Visibility.Hidden; CmBox2.Visibility = Visibility.Hidden;
-                CargarComboBox.CargarEspecialidades(CmBox2);
-                Label3.Content = DataPRXE.Columns[2].Header.ToString(); Label3.Visibility = Visibility.Hidden; box3.Visibility = Visibility.Hidden; CmBox3.Visibility = Visibility.Hidden;
-                CargarComboBox.CargarMuestra(CmBox3);
-                Label4.Content = DataPRXE.Columns[3].Header.ToString(); Label4.Visibility = Visibility.Hidden; box4.Visibility = Visibility.Hidden; CmBox4.Visibility = Visibility.Hidden;
-                Label5.Visibility = Visibility.Hidden; box5.Visibility = Visibility.Hidden;
-                Label6.Visibility = Visibility.Hidden; box6.Visibility = Visibility.Hidden;
-                Label7.Visibility = Visibility.Hidden; box7.Visibility = Visibility.Hidden;
-                Label8.Visibility = Visibility.Hidden; box8.Visibility = Visibility.Hidden;
-                Label9.Visibility = Visibility.Hidden; box9.Visibility = Visibility.Hidden;
-                Label10.Visibility = Visibility.Hidden; box10.Visibility = Visibility.Hidden;
-                Label11.Visibility = Visibility.Hidden; box11.Visibility = Visibility.Hidden;
-            }
-        }*/
         private void DataPacientes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try {
@@ -1007,44 +959,6 @@ namespace T.P_sqlserver
                 catch { }
             }
         }
-        /*private void DataPEXE_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            box1.Text = ""; box2.Text = ""; box3.Text = "";
-            box4.Text = ""; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
-            if (DataPEXE.SelectedItem != null)
-            {
-                try
-                {
-                    DataRowView selectedRow = (DataRowView)DataPEXE.SelectedItem;
-                    box1.Text = selectedRow.Row[0].ToString();
-                    box2.Text = selectedRow.Row[1].ToString();
-                    CmBox3.SelectedItem = selectedRow.Row[2].ToString();
-                    box4.Text = selectedRow.Row[3].ToString();
-                }
-                catch { }
-            }
-        }
-        private void DataPRXE_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            box1.Text = ""; box2.Text = ""; box3.Text = "";
-            box4.Text = ""; box5.Text = ""; box6.Text = "";
-            box7.Text = ""; box8.Text = ""; box9.Text = "";
-            box10.Text = ""; box11.Text = "";
-            if (DataPRXE.SelectedItem != null)
-            {
-                try
-                {
-                    DataRowView selectedRow = (DataRowView)DataPRXE.SelectedItem;
-                    box1.Text = selectedRow.Row[0].ToString();
-                    CmBox2.SelectedItem = selectedRow.Row[1].ToString();
-                    CmBox3.SelectedItem = selectedRow.Row[2].ToString();
-                    box4.Text = selectedRow.Row[3].ToString();
-                }
-                catch { }
-            }
-        }*/
         private void DataPRXI_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             btnLimpiar_Click(sender, e);
@@ -1060,61 +974,10 @@ namespace T.P_sqlserver
         }
         private void TabControl1_SelectionChanged(object sender, SelectionChangedEventArgs? e)
         {
-            switch (TabControl2.SelectedIndex)
-            {
-                case 0:
-                    DataLocalidades_Loaded(sender, e);
-                    break;
-                case 1:
-                    DataMedicos_Loaded(sender, e);
-                    break;
-                case 2:
-                    DataPEXL_Loaded(sender, e);
-                    break;
-                case 3:
-                    DataCategorias_Loaded(sender, e);
-                    break;
-                case 4:
-                    DataEspecialidades_Loaded(sender, e);
-                    break;
-                case 5:
-                    DataPracticas_Loaded(sender, e);
-                    break;
-                case 6:
-                    DataPRXI_Loaded(sender, e);
-                    break;
-                default:
-                    break;
-            }
+
         }
         private void TabControl2_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {/*
-            switch (TabControl2.SelectedIndex)
-            {
-                case 0:
-                    DataLocalidades_Loaded(sender, e);
-                    break;
-                case 1:
-                    DataMedicos_Loaded(sender, e);
-                    break;
-                case 2:
-                    DataPEXL_Loaded(sender, e);
-                    break;
-                case 3:
-                    DataCategorias_Loaded(sender, e);
-                    break;
-                case 4:
-                    DataEspecialidades_Loaded(sender, e);
-                    break;
-                case 5:
-                    DataPracticas_Loaded(sender, e);
-                    break;
-                case 6:
-                    DataPRXI_Loaded(sender, e);
-                    break;
-                default:
-                    break;
-            }*/
+        {
         }
 
         //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1209,34 +1072,9 @@ namespace T.P_sqlserver
 
         }
 
-        private void TabControl2_Loaded(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            switch (TabControl2.SelectedIndex)
-            {
-                case 0:
-                    DataLocalidades_Loaded(sender, e);
-                    break;
-                case 1:
-                    DataMedicos_Loaded(sender, e);
-                    break;
-                case 2:
-                    DataPEXL_Loaded(sender, e);
-                    break;
-                case 3:
-                    DataCategorias_Loaded(sender, e);
-                    break;
-                case 4:
-                    DataEspecialidades_Loaded(sender, e);
-                    break;
-                case 5:
-                    DataPracticas_Loaded(sender, e);
-                    break;
-                case 6:
-                    DataPRXI_Loaded(sender, e);
-                    break;
-                default:
-                    break;
-            }
+
         }
     }
 }

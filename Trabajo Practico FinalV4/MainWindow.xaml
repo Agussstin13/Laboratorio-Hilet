@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:T.P_sqlserver"
         mc:Ignorable="d"
-        Title="Laboratorio" Height="600" Width="1015" MinHeight="600" MinWidth="1015">
+        Title="Laboratorio" Height="600" Width="1015" MinHeight="600" MinWidth="1015" Loaded="Window_Loaded">
     <Grid Margin="0,0,0,-6" Background="#9ce0db">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="334*"/>
+            <ColumnDefinition Width="681*"/>
+        </Grid.ColumnDefinitions>
         <DockPanel LastChildFill="True" Margin="0,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="233">
             <StackPanel Width="87" HorizontalAlignment="Left">
                 <Button x:Name="btnAgregar" HorizontalAlignment="Left" Content="Agregar" Margin="5" Width="77" Height="45" Click="btnAgregar_Click"/>
@@ -15,8 +19,8 @@
                 <Button x:Name="btnLimpiar" Content="Limpiar" Margin="5" Width="77"  Click="btnLimpiar_Click" Height="40"/>
             </StackPanel>
         </DockPanel>
-        <Button x:Name="btnSalir" Content="Salir" Click="btnSalir_Click" Margin="0,0,10,17" Height="57" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="100"/>
-        <TabControl x:Name="TabControl1" SelectionChanged="TabControl1_SelectionChanged" Margin="10,10,10,261">
+        <Button x:Name="btnSalir" Content="Salir" Click="btnSalir_Click" Margin="0,0,10,17" Height="57" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="100" Grid.Column="1"/>
+        <TabControl x:Name="TabControl1" SelectionChanged="TabControl1_SelectionChanged" Margin="10,10,10,261" Grid.ColumnSpan="2">
             <TabItem x:Name="Pacientes" Header="Pacientes">
                 <Grid>
                     <DataGrid x:Name="DataPacientes" Background="#98c3ed" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataPacientes_Loaded" SelectionChanged="DataPacientes_SelectionChanged" AutoGeneratingColumn="DataPacientes_Auto"/>
@@ -29,7 +33,7 @@
             </TabItem>
             <TabItem x:Name="Laboratorio" Header="Laboratorio" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
                 <Grid Background="#FFE5E5E5">
-                    <TabControl x:Name="TabControl2" SelectionChanged="TabControl2_SelectionChanged" Loaded="TabControl2_Loaded">
+                    <TabControl x:Name="TabControl2" SelectionChanged="TabControl2_SelectionChanged">
                         <TabItem x:Name="Localidades" Header="Localidades">
                             <Grid Background="#FFE5E5E5">
                                 <DataGrid x:Name="DataLocalidades" Background="#98c3ed" IsReadOnly="True" d:ItemsSource="{d:SampleData ItemCount=5}" Loaded="DataLocalidades_Loaded" SelectionChanged="DataLocalidades_SelectionChanged" AutoGeneratingColumn="DataLocalidades_Auto"/>
@@ -85,7 +89,7 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Grid x:Name="gridBoxs" Margin="87,0,10,74" Height="175" VerticalAlignment="Bottom">
+        <Grid x:Name="gridBoxs" Margin="87,0,10,74" Height="175" VerticalAlignment="Bottom" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
