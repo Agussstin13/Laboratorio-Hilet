@@ -1,0 +1,224 @@
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.exe
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.deps.json
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.runtimeconfig.json
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.csproj.AssemblyReference.cache
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.cache
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.lref
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.g.resources
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfoInputs.cache
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfo.cs
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CoreCompileInputs.cache
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\refint\T.P sqlserver.dll
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.genruntimeconfig.cache
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\ref\T.P sqlserver.dll
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SoyAdmin\source\repos\T.P sqlserver\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CopyComplete
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.exe
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.deps.json
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.runtimeconfig.json
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.csproj.AssemblyReference.cache
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.cache
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.lref
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.g.resources
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfoInputs.cache
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfo.cs
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CoreCompileInputs.cache
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CopyComplete
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\refint\T.P sqlserver.dll
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.genruntimeconfig.cache
+C:\Users\HILET.HILET\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\ref\T.P sqlserver.dll
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.exe
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.deps.json
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.runtimeconfig.json
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.dll
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.pdb
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.csproj.AssemblyReference.cache
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\App.g.cs
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.cache
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.lref
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.g.resources
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfoInputs.cache
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfo.cs
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CoreCompileInputs.cache
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CopyComplete
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.dll
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\refint\T.P sqlserver.dll
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.pdb
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.genruntimeconfig.cache
+D:\Sgromo Agustin\Algoritmos\T.P sqlserver\obj\Debug\net6.0-windows\ref\T.P sqlserver.dll
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.csproj.AssemblyReference.cache
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.cache
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.lref
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\refint\T.P sqlserver.dll
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.exe
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.deps.json
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.runtimeconfig.json
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.g.resources
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfoInputs.cache
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfo.cs
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CoreCompileInputs.cache
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CopyComplete
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\T.P sqlserver.genruntimeconfig.cache
+C:\Users\SoyAdmin\Downloads\T.P sqlserver\obj\Debug\net6.0-windows\ref\T.P sqlserver.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.exe
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.deps.json
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.runtimeconfig.json
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.csproj.AssemblyReference.cache
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.cache
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.lref
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.g.resources
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfoInputs.cache
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfo.cs
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CoreCompileInputs.cache
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CopyComplete
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\refint\T.P sqlserver.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.genruntimeconfig.cache
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\obj\Debug\net6.0-windows\ref\T.P sqlserver.dll
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\refint\T.P sqlserver.dll
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.exe
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.deps.json
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.runtimeconfig.json
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.csproj.AssemblyReference.cache
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.cache
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.lref
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.g.resources
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfoInputs.cache
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfo.cs
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CoreCompileInputs.cache
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CopyComplete
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.genruntimeconfig.cache
+C:\Users\fraveg\Downloads\Trabajo Practico Final-20231113T083107Z-001\Trabajo Practico Final\obj\Debug\net6.0-windows\ref\T.P sqlserver.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.csproj.AssemblyReference.cache
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.cache
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.lref
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\refint\T.P sqlserver.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.exe
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.deps.json
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.runtimeconfig.json
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\bin\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.g.resources
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfoInputs.cache
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfo.cs
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CoreCompileInputs.cache
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CopyComplete
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\T.P sqlserver.genruntimeconfig.cache
+C:\Users\SoyAdmin\Desktop\Trabajo Practico Final\Trabajo Practico Final\obj\Debug\net6.0-windows\ref\T.P sqlserver.dll
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\bin\Debug\net6.0-windows\T.P sqlserver.exe
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\bin\Debug\net6.0-windows\T.P sqlserver.deps.json
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\bin\Debug\net6.0-windows\T.P sqlserver.runtimeconfig.json
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\bin\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\bin\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\T.P sqlserver.csproj.AssemblyReference.cache
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.cache
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\T.P sqlserver_MarkupCompile.lref
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\T.P sqlserver.g.resources
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\T.P sqlserver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfoInputs.cache
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\T.P sqlserver.AssemblyInfo.cs
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CoreCompileInputs.cache
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\T.P sqlserver.csproj.CopyComplete
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\T.P sqlserver.dll
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\refint\T.P sqlserver.dll
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\T.P sqlserver.pdb
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\T.P sqlserver.genruntimeconfig.cache
+C:\Users\fraveg\Downloads\Trabajo Practico FinalV4\obj\Debug\net6.0-windows\ref\T.P sqlserver.dll
