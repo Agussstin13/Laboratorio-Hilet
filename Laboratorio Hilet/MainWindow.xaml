@@ -1,0 +1,222 @@
+﻿<Window x:Class="Laboratorio_Hilet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laboratorio_Hilet"
+        mc:Ignorable="d"
+        Title="MainWindow" MinHeight="600" Height="600" MinWidth="1000" Width="1000">
+    <Grid x:Name="maingrid">
+        <UniformGrid Rows="10" Columns="1" HorizontalAlignment="Left" Width="176" Margin="0,0,0,192">
+            <Button x:Name="btnpacientes" Content="Pacientes" Margin="5" Click="btnpacientes_Click"/>
+            <Button x:Name="btningresos" Content="Ingresos" Margin="5" Click="btningresos_Click"/>
+            <Button x:Name="btnLaboratorio" Content="Laboratorio" Margin="5" Click="btnLaboratorio_Click"/>
+            <Button x:Name="btnLocalidades" Content="Localidades" Margin="30,5,5,5" Click="btnLocalidades_Click"/>
+            <Button x:Name="btnPersonalMedico" Content="Personal Medico" Margin="30,5,5,5" Click="btnPersonalMedico_Click"/>
+            <Button x:Name="btnPersonalLaboratorio" Content="Personal Laboratorio" Margin="30,5,5,5" Click="btnPersonalLaboratorio_Click"/>
+            <Button x:Name="btnCategorias" Content="Categorias" Margin="30,5,5,5" Click="btnCategorias_Click"/>
+            <Button x:Name="btnEspecialidades" Content="Especialidades" Margin="30,5,5,5" Click="btnEspecialidades_Click"/>
+            <Button x:Name="btnPracticas" Content="Practicas" Margin="30,5,5,5" Click="btnPracticas_Click"/>
+            <Button x:Name="btnPracticasxIngreso" Content="Practicas por Ingreso" Margin="30,5,5,5" Click="btnPracticasxIngreso_Click"/>
+        </UniformGrid>
+        <StackPanel HorizontalAlignment="Left" Width="176" Height="184" VerticalAlignment="Bottom">
+            <Button x:Name="btnAgregar" Content="Agregar" Margin="4" Width="100" Height="28" Click="btnAgregar_Click"/>
+            <Button x:Name="btnModificar" Content="Modificar" Margin="4" Width="100" Height="28" Click="btnModificar_Click"/>
+            <Button x:Name="btnEliminar" Content="Eliminar" Margin="4" Width="100" Height="28" Click="btnEliminar_Click"/>
+            <Button x:Name="btnLimpiar" Content="Limpiar" Margin="4" Width="100" Height="28" Click="btnLimpiar_Click"/>
+            <Button x:Name="btnCancelar" Content="Cancelar" Margin="4" Width="100" Height="28" Visibility="Hidden" Click="btnCancelar_Click"/>
+        </StackPanel>
+        <Grid x:Name="GPacientes" Margin="181,35,0,0" Visibility="Hidden">
+            <DataGrid x:Name="DGPacientes" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,184" IsReadOnly="True" SelectionChanged="DGPacientes_SelectionChanged" AutoGeneratingColumn="DGPacientes_AutoGeneratingColumn"/>
+            <Grid x:Name="GPacientes2" Height="179" VerticalAlignment="Bottom">
+                <Label x:Name="lbnombre" Content="Nombre" Margin="10,0,10,145" Grid.Column="0"/>
+                <Label x:Name="lbapellido" Content="Apellido" Margin="10,0,10,145" Grid.Column="1"/>
+                <Label x:Name="lbciudades" Content="Ciudad" Margin="10,0,10,145" Grid.Column="2"/>
+                <Label x:Name="lbnacimiento" Content="Nacimiento" Margin="10,0,10,145" Grid.Column="3"/>
+                <Label x:Name="lbdni" Content="Dni" Margin="10,0,10,145" Grid.Column="4"/>
+                <Label x:Name="lbdireccion" Content="Direccion" Margin="10,0,10,145" Grid.Column="5"/>
+                <Label x:Name="lbaltura" Content="Altura" Margin="10,89,10,56" Grid.Column="0"/>
+                <Label x:Name="lbpiso" Content="Piso" Margin="10,89,10,56" Grid.Column="1"/>
+                <Label x:Name="lbdepartamento" Content="Departamento" Margin="10,89,10,56" Grid.Column="2"/>
+                <Label x:Name="lbcorreo" Content="Correo" Margin="10,89,10,56" Grid.Column="3"/>
+                <Label x:Name="lbtelefono" Content="Telefono" Margin="10,89,10,56" Grid.Column="4"/>
+                <TextBox x:Name="boxnombre" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="0" Height="45" VerticalAlignment="Top" PreviewTextInput="boxnombre_PreviewTextInput" />
+                <TextBox x:Name="boxapellido" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="1" Height="45" VerticalAlignment="Top" PreviewTextInput="boxapellido_PreviewTextInput" />
+                <ComboBox x:Name="cmboxciudad" Margin="10,39,10,0" Grid.Column="2" Height="45" VerticalAlignment="Top"/>
+                <DatePicker x:Name="DateNacimiento" Margin="10,39,10,0" Height="45" Grid.Column="3" DisplayDateStart="1/1/1910" VerticalAlignment="Top" PreviewKeyDown="DateNacimiento_PreviewKeyDown"/>
+                <TextBox x:Name="boxdni" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="4" Height="45" VerticalAlignment="Top" PreviewTextInput="boxdni_PreviewTextInput" />
+                <TextBox x:Name="boxdireccion" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="5" Height="45" VerticalAlignment="Top" PreviewTextInput="boxdireccion_PreviewTextInput" />
+                <TextBox x:Name="boxaltura" TextWrapping="Wrap" Margin="10,128,10,2" Grid.Column="0" PreviewTextInput="boxaltura_PreviewTextInput"/>
+                <TextBox x:Name="boxpiso" TextWrapping="Wrap" Margin="10,128,10,2" Grid.Column="1" PreviewTextInput="boxpiso_PreviewTextInput" />
+                <TextBox x:Name="boxdepartamento" TextWrapping="Wrap" Margin="10,128,10,2" Grid.Column="2" Height="45" VerticalAlignment="Top" PreviewTextInput="boxdepartamento_PreviewTextInput" />
+                <TextBox x:Name="boxcorreo" TextWrapping="Wrap" Margin="10,128,10,2" Grid.Column="3" Height="45" VerticalAlignment="Top" PreviewTextInput="boxcorreo_PreviewTextInput" />
+                <TextBox x:Name="boxtelefono" TextWrapping="Wrap" Margin="10,128,10,2" Grid.Column="4" Height="45" VerticalAlignment="Top" PreviewTextInput="boxtelefono_PreviewTextInput" />
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GIngresos" Margin="181,35,0,0">
+            <DataGrid x:Name="DGIngresos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,184" IsReadOnly="True" SelectionChanged="DGIngresos_SelectionChanged" AutoGeneratingColumn="DGIngresos_AutoGeneratingColumn"/>
+            <Grid x:Name="GIngresos2" Margin="0,370,0,0">
+                <Label x:Name="lbPaciente" Content="Paciente" Margin="10,0,10,145" Grid.Column="0"/>
+                <Label x:Name="lbProfesional" Content="Profesional" Margin="10,0,10,145" Grid.Column="1"/>
+                <Label x:Name="lbfechaingreso" Content="Fecha Ingreso" Margin="10,0,10,145" Grid.Column="2"/>
+                <Label x:Name="lbfecharetiro" Content="Fecha Retiro" Margin="10,0,10,145" Grid.Column="3"/>
+                <ComboBox x:Name="cmboxPaciente" Margin="10,39,10,0" Grid.Column="0" Height="45" VerticalAlignment="Top" SelectionChanged="cmboxPaciente_SelectionChanged"/>
+                <ComboBox x:Name="cmboxProfesional" Margin="10,39,10,0" Grid.Column="1" Height="45" VerticalAlignment="Top" SelectionChanged="cmboxProfesional_SelectionChanged"/>
+                <DatePicker x:Name="Datefechaingreso" Margin="10,39,10,0" Height="45" Grid.Column="2" DisplayDateEnd="" DisplayDateStart="1/1/2023" VerticalAlignment="Top" PreviewKeyDown="Datefechaingreso_PreviewKeyDown" SelectedDateChanged="Datefechaingreso_SelectedDateChanged"/>
+                <DatePicker x:Name="Datefecharetiro" Margin="10,39,10,0" Height="45" Grid.Column="3" DisplayDateStart="1/1/2023" VerticalAlignment="Top" PreviewKeyDown="Datefecharetiro_PreviewKeyDown"/>
+                <ComboBox x:Name="IDPaciente" Width="0" Height="0" Visibility="Hidden"/>
+                <ComboBox x:Name="IDProfesional" Width="0" Height="0" Visibility="Hidden"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GLocalidades" Margin="181,35,0,0" Visibility="Hidden">
+            <DataGrid x:Name="DGLocalidades" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,184" IsReadOnly="True" SelectionChanged="DGLocalidades_SelectionChanged" AutoGeneratingColumn="DGLocalidades_AutoGeneratingColumn"/>
+            <Grid x:Name="GLocalidades2" Height="179" VerticalAlignment="Bottom">
+                <Label x:Name="lbciudad" Content="Ciudad" Margin="10,0,10,145" Grid.Column="0"/>
+                <Label x:Name="lbcodigopostal" Content="Codigo Postal" Margin="10,0,10,145" Grid.Column="1" />
+                <TextBox x:Name="boxciudad" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="0" Height="45" VerticalAlignment="Top" PreviewTextInput="boxciudad_PreviewTextInput"/>
+                <TextBox x:Name="boxcodigopostal" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="1" Height="45" VerticalAlignment="Top" PreviewTextInput="boxcodigopostal_PreviewTextInput"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GMedicos" Margin="181,35,0,0" Visibility="Hidden">
+            <DataGrid x:Name="DGMedicos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,184" IsReadOnly="True" SelectionChanged="DGMedicos_SelectionChanged" AutoGeneratingColumn="DGMedicos_AutoGeneratingColumn"/>
+            <Grid x:Name="GMedicos2" Height="179" VerticalAlignment="Bottom">
+                <Label x:Name="lbnombreprofesional" Content="Nombre Profesional" Margin="10,0,10,145" Grid.Column="0"/>
+                <Label x:Name="lbapellidoprofesional" Content="Apellido Profesional" Margin="10,0,10,145" Grid.Column="1" />
+                <Label x:Name="lbmatriculaprofesional" Content="Matricula" Margin="10,0,10,145" Grid.Column="2" />
+                <Label x:Name="lbservicios" Content="Servicios" Margin="10,0,10,145" Grid.Column="3" />
+                <TextBox x:Name="boxnombreprofesional" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="0" Height="45" VerticalAlignment="Top" PreviewTextInput="boxnombreprofesional_PreviewTextInput"/>
+                <TextBox x:Name="boxapellidoprofesional" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="1" Height="45" VerticalAlignment="Top" PreviewTextInput="boxapellidoprofesional_PreviewTextInput"/>
+                <TextBox x:Name="boxmatriculaprofesional" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="2" Height="45" VerticalAlignment="Top" PreviewTextInput="boxmatriculaprofesional_PreviewTextInput"/>
+                <ComboBox x:Name="cmboxservicios" Margin="10,39,10,0" Grid.Column="3" Height="45" VerticalAlignment="Top"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GpersonalLaboratorio" Margin="181,35,0,0" Visibility="Hidden">
+            <DataGrid x:Name="DGPersonalLaboratorio" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,184" IsReadOnly="True" SelectionChanged="DGPersonalLaboratorio_SelectionChanged" AutoGeneratingColumn="DGPersonalLaboratorio_AutoGeneratingColumn"/>
+            <Grid x:Name="GpersonalLaboratorio2" Height="179" VerticalAlignment="Bottom">
+                <Label x:Name="lbnombrepersonal" Content="Nombre Personal" Margin="10,0,10,145" Grid.Column="0"/>
+                <Label x:Name="lbapellidopersonal" Content="Apellido Personal" Margin="10,0,10,145" Grid.Column="1" />
+                <Label x:Name="lbmatriculapersonal" Content="Matricula" Margin="10,0,10,145" Grid.Column="2" />
+                <Label x:Name="lbcategoriapersonal" Content="Categoria" Margin="10,0,10,145" Grid.Column="3" />
+                <Label x:Name="lbespecialidadeslaboratorio" Content="Especialidades" Margin="10,0,10,145" Grid.Column="4" />
+                <TextBox x:Name="boxnombrepersonal" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="0" Height="45" VerticalAlignment="Top" PreviewTextInput="boxnombrepersonal_PreviewTextInput"/>
+                <TextBox x:Name="boxapellidopersonal" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="1" Height="45" VerticalAlignment="Top" PreviewTextInput="boxapellidopersonal_PreviewTextInput"/>
+                <TextBox x:Name="boxmatriculapersonal" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="2" Height="45" VerticalAlignment="Top" PreviewTextInput="boxmatriculapersonal_PreviewTextInput"/>
+                <ComboBox x:Name="cmboxcategoriapersonal" Margin="10,39,10,0" Grid.Column="3" Height="45" VerticalAlignment="Top"/>
+                <ComboBox x:Name="cmboxespecialidadespersonal" Margin="10,39,10,0" Grid.Column="4" Height="45" VerticalAlignment="Top"/>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GCategorias" Margin="181,35,0,0" Visibility="Hidden">
+            <DataGrid x:Name="DGCategorias" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,184" IsReadOnly="True" SelectionChanged="DGCategorias_SelectionChanged" AutoGeneratingColumn="DGCategorias_AutoGeneratingColumn"/>
+            <Grid x:Name="GCategorias2" Height="179" VerticalAlignment="Bottom">
+                <Label x:Name="lbcategoria" Content="Categoria" Margin="10,0,10,145" Grid.Column="0"/>
+                <TextBox x:Name="boxcategoria" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="0" Height="45" VerticalAlignment="Top" PreviewTextInput="boxcategoria_PreviewTextInput"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GEspecialidades" Margin="181,35,0,0" Visibility="Hidden">
+            <DataGrid x:Name="DGEspecialidades" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,184" IsReadOnly="True" SelectionChanged="DGEspecialidades_SelectionChanged" AutoGeneratingColumn="DGEspecialidades_AutoGeneratingColumn"/>
+            <Grid x:Name="GEspecialidades2" Height="179" VerticalAlignment="Bottom">
+                <Label x:Name="lbespecialidades" Content="Especialidades" Margin="10,0,10,145" Grid.Column="0"/>
+                <TextBox x:Name="boxspecialidades" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="0" Height="45" VerticalAlignment="Top" PreviewTextInput="boxspecialidades_PreviewTextInput"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GPracticas" Margin="181,35,0,0" Visibility="Hidden">
+            <DataGrid x:Name="DGPracticas" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,184" IsReadOnly="True" SelectionChanged="DGPracticas_SelectionChanged" AutoGeneratingColumn="DGPracticas_AutoGeneratingColumn"/>
+            <Grid x:Name="GPracticas2" Height="179" VerticalAlignment="Bottom">
+                <Label x:Name="lbpractica" Content="Practica" Margin="10,0,10,145" Grid.Column="0" />
+                <Label x:Name="lbespecialidadespracticas" Content="Especialidad" Margin="10,0,10,145" Grid.Column="1"/>
+                <Label x:Name="lbmuestra" Content="Muestra" Margin="10,0,10,145" Grid.Column="2" />
+                <Label x:Name="lbdemorapractica" Content="Demora Practica" Margin="10,0,10,145" Grid.Column="3" />
+                <TextBox x:Name="boxpractica" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="0" Height="45" VerticalAlignment="Top" PreviewTextInput="boxpractica_PreviewTextInput"/>
+                <ComboBox x:Name="cmboxespecialidadespracticas" Margin="10,39,10,0" Grid.Column="1" Height="45" VerticalAlignment="Top"/>
+                <ComboBox x:Name="cmboxmuestra" Margin="10,39,10,0" Grid.Column="2" Height="45" VerticalAlignment="Top"/>
+                <TextBox x:Name="boxdemora" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="3" Height="45" VerticalAlignment="Top" PreviewTextInput="boxdemora_PreviewTextInput"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+        <Grid x:Name="GPracticasIngresos" Margin="181,35,0,0" Visibility="Hidden">
+            <DataGrid x:Name="DGPracticasIngresos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,184" IsReadOnly="True" SelectionChanged="DGPracticasIngresos_SelectionChanged" AutoGeneratingColumn="DGPracticasIngresos_AutoGeneratingColumn"/>
+            <Grid x:Name="GPracticasIngresos2" Height="179" VerticalAlignment="Bottom">
+                <Label x:Name="lbpracticas" Content="Practica" Margin="10,0,10,145" Grid.Column="0" />
+                <Label x:Name="lbingresos" Content="Ingreso" Margin="10,0,10,145" Grid.Column="1"/>
+                <Label x:Name="lbresultado" Content="Resultado" Margin="10,0,10,145" Grid.Column="2" />
+                <ComboBox x:Name="cmboxpracticas" Margin="10,39,10,0" Grid.Column="0" Height="45" VerticalAlignment="Top" SelectionChanged="cmboxpracticas_SelectionChanged"/>
+                <ComboBox x:Name="cmboxingresos" Margin="10,39,10,0" Grid.Column="1" Height="45" VerticalAlignment="Top" SelectionChanged="cmboxingresos_SelectionChanged"/>
+                <TextBox x:Name="boxresultado" TextWrapping="Wrap" Margin="10,39,10,0" Grid.Column="2" Height="45" VerticalAlignment="Top" PreviewTextInput="boxresultado_PreviewTextInput"/>
+                <ComboBox x:Name="IDPracticas" Width="0" Height="0" Visibility="Hidden"/>
+                <ComboBox x:Name="IDIngresos" Width="0" Height="0" Visibility="Hidden"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Grid>
+        <TextBox x:Name="boxbusqueda" Margin="230,0,0,0" TextWrapping="Wrap" Height="30" VerticalAlignment="Top" KeyDown="boxbusqueda_KeyDown"/>
+        <Label x:Name="lbbusqueda" Content="Buscar:" HorizontalAlignment="Left" Margin="181,4,0,0" VerticalAlignment="Top" Width="49"/>
+    </Grid>
+</Window>
